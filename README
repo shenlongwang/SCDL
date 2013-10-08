@@ -1,0 +1,36 @@
+% Semi-Coupled Dictionary Learning for Super-Resolution
+% Author: Shenlong Wang, NPU/HK POLYU
+
+% Latest Update: 27, Sept 2012
+	1. Two bugs have been revised. 
+	2. Training sample are included in the Data folder. 
+
+% This code is for the paper:
+% S. Wang, L. Zhang, Y. Liang and Q. Pan, "Semi-coupled Dictionary Learning 
+% with Applications in Super-resolution and Photo-Sketch Synthesis", in CVPR 2012. 
+% It has been tested on 64-bit LINUX. 
+
+% Thanks Dr. Weisheng Dong for providing some useful MATLAB functions including clustering and nonlocal block matching. 
+% The sparse coding algorithm used in this package is from SPAMS toolbox [2]. Please make sure that the toolbox has been 
+% successfully installed in your computer. 
+
+
+% 1. If you want to reproduce super-resolution experiment, Please run Image_SR directly. 
+% 2. If you want reproduce dictionary learning procedures, please run Dict_Train directly. 
+% 3. If you want to collect image patches from your own training data, please refer to collectPatches. 
+% 4. If you want to adopt our semi-coupled dictionary framework in your own tasks, please call the coupledDL function in our code. 
+% But please note that an initialization is necessary and please refer to our paper for initialization method. 
+
+% collectPatches : Training patches collecting
+% Dict_Train.m   : Semi-coupled dictionary learning
+% Image_SR.m     : Image interpolation demo
+
+% Plese cite those paper below if you use this software:
+
+% [1] S. Wang, L. Zhang, Y. Liang and Q. Pan, "Semi-coupled Dictionary Learning 
+% with Applications in Super-resolution and Photo-Sketch Synthesis", in CVPR 2012. 
+
+% [2] J. Mairal, F. Bach, J. Ponce and G. Sapiro, "Online Dictionary
+% Learning for Sparse Coding", in ICML 2009
+
+% Contact: {csslwang, cslzhang}@comp.polyu.edu.hk, Alternative: shenlong.wang@gmail.com
